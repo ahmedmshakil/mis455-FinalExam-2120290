@@ -92,6 +92,14 @@
     color: #fff;
     cursor: pointer;
   }
+
+  /* footer {
+    width: 100%;
+    background: rgb(11, 113, 216);
+    color: rgb(118, 11, 11);
+    text-align: center; 
+    margin-top: fixed; 
+  } */
   
   footer {
     width: 100%;

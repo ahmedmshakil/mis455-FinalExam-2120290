@@ -5,17 +5,21 @@ function searchMeal() {
   var searchTerm = document.getElementById("searchInput").value;
   var apiUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`;
 
+  // Clear previous results and reset currentMeals array
+  document.getElementById("mealResults").innerHTML = "";
+  currentMeals = [];
+
   
 
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
       if (data.meals) {
-        for (let i = 0; i < Math.min(data.meals.length, 5); i++) {
+        for (let i = 0; i < Math.min(data.meals.length, 5); i++) { // Display only the first 5 meals
           displayMeal(data.meals[i]);
           currentMeals.push(data.meals[i]);
         }
-
+        // If more than 5 results, show "Show More" button
         if (data.meals.length > 5) {
           showMoreButton(data.meals.slice(5));
         }
