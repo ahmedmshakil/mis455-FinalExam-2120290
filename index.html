@@ -5,7 +5,27 @@
     <title>meal-khuji</title>
     <!-- Md Shakil Ahmed_2120290 -->
 </head>
-<body>
-    
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meal Search</a>
+            
+            <form class="form-inline">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchMeal()">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<main class="container mt-4">
+    <div id="mealResults" class="row"></div>
+    <div id="showMoreContainer" class="row mt-4"></div>
+</main>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
