@@ -46,7 +46,7 @@
     width: 40%; 
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-left: 20px; 
+    margin-left: 20px;
     margin-top: 10px;
   }
   
@@ -58,4 +58,52 @@
     color: #fff;
     cursor: pointer;
     margin-top: 60px;
+  }
+
+  .meal-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .meal {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(33.33% - 20px);
+  }
+  
+  .meal img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .show-all-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .show-all-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  footer {
+    width: 100%;
+    background: rgb(52, 58, 64);
+    color: rgb(30, 29, 29);
+    padding: 20px 0;
+    text-align: center;
+    position: relative; 
+    margin-top: auto; 
+  }
+  
+  footer p {
+    font-size: 20px;
+    color: linear-gradient(to right, rgb(159, 170, 195), #5d8e97);
   }
