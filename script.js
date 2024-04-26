@@ -43,4 +43,23 @@ function displayMeal(meal) {
   document.getElementById("mealResults").appendChild(mealElement);
 }
 
+function showMoreButton(meals) {
+    var showMoreContainer = document.getElementById("showMoreContainer");
+    var showMoreBtn = document.createElement("button");
+    showMoreBtn.classList.add("btn", "btn-primary");
+    showMoreBtn.textContent = "Show More";
+    showMoreBtn.addEventListener("click", function () {
+      showMoreMeals(meals);
+      showMoreContainer.innerHTML = "";
+    });
+    showMoreContainer.appendChild(showMoreBtn);
+  }
+  
+  function showMoreMeals(meals) {
+    meals.forEach((meal) => {
+      displayMeal(meal);
+      currentMeals.push(meal);
+    });
+  }
+
 
